@@ -1,5 +1,5 @@
 import React from 'react'
-import MainDash from '../components/MainDash'
+import { Outlet } from 'react-router-dom'
 import Rightbar from '../components/Rightbar'
 import Sidebar from '../components/Sidebar'
 
@@ -9,7 +9,7 @@ const Dashboard = () => {
       <div className="App">
         <div className="AppGlass">
           <Sidebar />
-          <MainDash />
+          <Outlet />
           <Rightbar />
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { FaCog, FaRegCalendarCheck, FaRegFileAlt, FaSignOutAlt, FaThLarge, FaUserCheck } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div className="Sidebar">
@@ -12,42 +13,55 @@ const Sidebar = () => {
       </div>
       
       <div className="Menu">
-
+        
         <div className="MenuItem">
+          <NavLink to='/dashboard/' exact={true}>
+            <div className="icon">
+              <FaThLarge />
+            </div>
+            <h3>Dashboard</h3>
+            </NavLink>
+        </div>
+        
+        <div className="MenuItem">
+          <NavLink to='/dashboard/attendance'>
           <div className="icon">
-            icon
+            <FaRegCalendarCheck />
           </div>
-          Dashboard
+          <h3>Attendance</h3>
+          </NavLink>
         </div>
         <div className="MenuItem">
+          <NavLink to='/dashboard/student'>
           <div className="icon">
-            icon
+            <FaUserCheck />
           </div>
-          Attendance
+          <h3>Student</h3>
+          </NavLink>
         </div>
         <div className="MenuItem">
+          <NavLink to='/dashboard/record'>
           <div className="icon">
-            icon
+            <FaRegFileAlt />
           </div>
-          Student
+          <h3>Record</h3>
+          </NavLink>
         </div>
         <div className="MenuItem">
+          <NavLink to='/dashboard/settings'>
           <div className="icon">
-            icon
+            <FaCog />
           </div>
-          Record
+          <h3>Settings</h3>
+          </NavLink>
         </div>
         <div className="MenuItem">
+          <NavLink to='/'>
           <div className="icon">
-            icon
+            <FaSignOutAlt />
           </div>
-          Settings
-        </div>
-        <div className="MenuItem">
-          <div className="icon">
-            icon
-          </div>
-          Logout
+          <h3>Logout</h3>
+          </NavLink>
         </div>
 
       </div>
