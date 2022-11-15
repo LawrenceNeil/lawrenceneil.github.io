@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 
 export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@400;500;600;800&display=swap');
   :root{
     --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
     --orange: #fca61f;
@@ -100,8 +101,7 @@ export const GlobalStyle = createGlobalStyle`
         }
 
       }
-
     }
-
   }
+  
 `
